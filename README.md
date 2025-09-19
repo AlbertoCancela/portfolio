@@ -50,12 +50,6 @@ portfolio/
    http://localhost:8000
    ```
 
-
-## 📬 Contacto
-- GitHub: [AlbertoCancela](https://github.com/AlbertoCancela)
-- LinkedIn: *(pendiente de añadir)*
-- Email: *(pendiente de añadir)*
-
 ---
 
 ## 📜 Licencia
