@@ -1,7 +1,14 @@
 # 💻 Portfolio - Alberto Cancela
 
-Este es mi **portafolio personal** con estilo retro/vintage, inspirado en interfaces clásicas de escritorio.  
-Incluye ventanas flotantes, iconos interactivos y secciones dedicadas a proyectos, contacto y más.
+Este es mi **portafolio personal** con estilo vintage, tenía ganas de hacer algo diferente en cuanto a diseño, inspirándome en interfaces clásicas de escritorio.  
+
+---
+
+## 🎨 Diseño en Figma
+Puedes ver el diseño original en Figma aquí:  
+👉 [Ver diseño vintage en Figma](https://www.figma.com/design/8JC0WhaTMzxe6dx02NMZzA/vintageWebPC?node-id=0-1&p=f&t=xxp41MQaTjP1eaM8-0)
+
+---
 
 ---
 
@@ -32,28 +39,17 @@ portfolio/
    cd portfolio
    ```
 
-2. Instala las dependencias necesarias:
-   ```bash
-   npm install
-   ```
 
-3. Corre el servidor local (ejemplo con PHP):
+2. Corre el servidor local (ejemplo con PHP):
    ```bash
    php -S localhost:8000
    ```
 
-4. Abre en tu navegador:
+3. Abre en tu navegador:
    ```
    http://localhost:8000
    ```
 
----
-
-## 🎨 Diseño en Figma
-Puedes ver el diseño original en Figma aquí:  
-👉 [Ver diseño vintage en Figma](https://www.figma.com/design/8JC0WhaTMzxe6dx02NMZzA/vintageWebPC?node-id=0-1&p=f&t=xxp41MQaTjP1eaM8-0)
-
----
 
 ## 📬 Contacto
 - GitHub: [AlbertoCancela](https://github.com/AlbertoCancela)
