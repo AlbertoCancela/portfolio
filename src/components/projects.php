@@ -1,6 +1,26 @@
-<section class="flex justify-center w-full h-[90%] gap-4 flex-wrap overflow-auto">
-    <a target="_blank" href="https://clinicaviventi.com" class="group relative w-60 h-60 border overflow-hidden hover:cursor-pointer">
-        <img class="w-full h-full group-hover:hidden" src="/assets/images/testPortfolio.jpg" alt="">
+<section id="projectsGroup" class="flex w-full h-[90%] flex-wrap overflow-auto">
+    <div class="group w-[9.2em] h-[9.2em] flex flex-col items-center cursor-pointer">
+        <img class="h-[85%] transition duration-100 ease-in-out group-hover:scale-90"
+            src="/assets/images/icons/projects.png" alt="">
+        <p class="m-0 text-sm">Heyooo</p>
+    </div>
+    <div class="w-[9.2em] h-[9.2em] flex flex-col justify-center items-center">
+        <img class="h-[85%] fit-content hover:scale-90 ease-in-out transition duration-50 hover:cursor-pointer" 
+            src="/assets/images/icons/projects.png" alt="">
+        <p> Heyooo </p>
+    </div>
+    <div class="w-[9.2em] h-[9.2em] flex flex-col justify-center items-center">
+        <img class="h-[85%] fit-content hover:scale-90 ease-in-out transition duration-50 hover:cursor-pointer" 
+            src="/assets/images/icons/projects.png" alt="">
+        <p> Heyooo </p>
+    </div>
+    <div ondblclick="showView(this, 'projectDetail', 'projectsGroup', 'php')" class="w-[9.2em] h-[9.2em] flex flex-col justify-center items-center">
+        <img class="h-[85%] fit-content hover:scale-90 ease-in-out transition duration-50 hover:cursor-pointer" 
+            src="/assets/images/icons/projects.png" alt="">
+        <p> Heyooo </p>
+    </div>
+    <!-- <a target="_blank" href="https://clinicaviventi.com" class="group relative w-60 h-60 border overflow-hidden hover:cursor-pointer">
+        <img class="w-full h-full group-hover:hidden" src="/assets/images/psicviventi.png" alt="">
         <div class="hidden group-hover:flex flex-col items-center w-full h-full bg-cyan-50 p-2 overflow-auto">
             <h2 class="font-bold">Psic Website (click me)</h2>
             <p>I was in charge of designing and managing the psychological website of the 
@@ -9,7 +29,7 @@
         </div>
     </a>
     <a target="_blank" href="https://github.com/AlbertoCancela/poas" class="group relative w-60 h-60 border overflow-hidden hover:cursor-pointer">
-        <img class="w-full h-full group-hover:hidden" src="/assets/images/testPortfolio.jpg" alt="">
+        <img class="w-full h-full group-hover:hidden" src="/assets/images/poas.png" alt="">
         <div class="hidden group-hover:flex flex-col items-center w-full h-full bg-cyan-100 p-2 gap-2 overflow-auto">
             <h2 class="font-bold">POAs (click me)</h2>
             <p>This is a module created for Hipocrates University, aimed at the accounting 
@@ -20,7 +40,7 @@
         </div>
     </a>
     <a target="_blank" href="http://31.97.12.131/kWh-sysmax/src/login.php" class="group relative w-60 h-60 border overflow-hidden hover:cursor-pointer">
-        <img class="w-full h-full group-hover:hidden" src="/assets/images/testPortfolio.jpg" alt="">
+        <img class="w-full h-full group-hover:hidden" src="/assets/images/kwhc.png" alt="">
         <div class="hidden group-hover:flex flex-col items-center w-full h-full bg-cyan-100 p-2 gap-2 overflow-auto">
             <h2 class="font-bold">Energy consumption (click me)</h2>
             <p>This project consists of recording the electricity 
@@ -32,8 +52,8 @@
             <p class="text-cyan-600 mt-5">PHP, JS, Vanilla CSS, MySql, API REST</p>
         </div>
     </a>
-    <a target="_blank" href="" class="group relative w-60 h-60 border overflow-hidden hover:cursor-pointer">
-        <img class="w-full h-full group-hover:hidden" src="/assets/images/testPortfolio.jpg" alt="">
+    <a target="_blank" href="https://github.com/AlbertoCancela/portfolio/tree/main" class="group relative w-60 h-60 border overflow-hidden hover:cursor-pointer">
+        <img class="w-full h-full group-hover:hidden" src="/assets/images/portfolio.png" alt="">
         <div class="hidden group-hover:flex flex-col items-center w-full h-full bg-cyan-100 p-2 gap-2 overflow-auto">
             <h2 class="font-bold">¡This portfolio!</h2>
             <p>This portfolio was designed as a different way to showcase my data. 
@@ -41,5 +61,8 @@
             <p>Check out the repository and see how it was made! (constantly improving portfolio)</p>
             <p class="text-cyan-600 mt-5">PHP, JS, Tailwind, MySql</p>
         </div>
-    </a>
+    </a> -->
+</section>
+<section id="projectDetail" class="hidden flex w-full h-auto border flex-wrap overflow-auto">
+    heyp
 </section>

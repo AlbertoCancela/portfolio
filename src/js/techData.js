@@ -1,50 +1,202 @@
 const TECH_DATA = {
-    linux: {
-        title: "Linux",
-        description: "I've used the operating system quite a bit for programming. It's currently my primary environment (arch), and I've learned how to manage servers, cronjobs, and resources."
-    },
-    php: {
-        title: "php",
-        description: "This language is one I have a lot of experience with, even using it to consume and create APIs and manage all the data extracted from databases. It's definitely one of my best tools."
-    },
-    js: {
-        title: "JavaScript",
-        description: "I have used JS in conjunction with PHP to manage data, and also on its own to achieve animations, front-end functionality, etc. Over the years, I have learned SOLID principles and how to manage classes and asynchrony with JS."
-    },
-    jquery: {
-        title: "jQuery",
-        description: "framework with which I have worked quite a bit for the same functions as JS, and although I currently use more JS, I know how to make asynchronous requests, animations and code organization with jQuery."
-    },
-    git: {
-        title: "Git",
-        description: "Git is a tool that has helped me version my code since college. Currently, it's my primary versioning tool, and I've collaborated with colleagues and friends using this powerful tool."
-    },
-    mysql: {
-        title: "MySql",
-        description: "MySQL is my database manager of choice, with extensive experience in stored procedures, triggers, data cleansing, and complex queries with JOINS and nested queries."
-    },
-    oracle: {
-        title: "Oracle",
-        description: "Although I haven't used it as much as MySQL, I have a great deal of experience managing complex procedure packages and queries."
-    },
-    oracle: {
-        title: "Oracle",
-        description: "Although I haven't used it as much as MySQL, I have a great deal of experience managing complex procedure packages and queries."
-    },
-    tailwind: {
-        title: "Tailwind",
-        description: "My favorite styling framework, I've even learned to make my own styles with Tailwind and it's definitely my favorite way to work."
-    },
-    bootstrap: {
-        title: "Bootstrap",
-        description: "I have used Bootstrap for many projects during my time at Hippocrates University, and its icons are also my preferred choice."
-    },
-    design: {
-        title: "Design",
-        description: "I have a lot of experience in development, both in web modeling with figma, photo editing with photoshop and creating elements with Illustrator."
-    },
-    docker: {
-        title: "Docker",
-        description: "I know how to create ecosystems/networks with Docker Compose, and although I still have a lot to learn, I'm pretty sure it has greatly accelerated my work simulating environments."
-    }
+  linux: {
+    title: "Linux",
+    experience: "+4 años de uso diario",
+    summary: [
+      "Sistema operativo principal para desarrollo.",
+      "Entorno principal basado en Arch Linux."
+    ],
+    bullets: [
+      "Gestión de servidores",
+      "Uso de cronjobs",
+      "Administración de recursos",
+      "Trabajo en entornos de desarrollo"
+    ],
+    related: "Arch Linux · Bash · Cron · Systemctl"
+  },
+
+  gcmlm: {
+    title: "Machine Learning Models with BigQuery",
+    experience: "Proyecto académico / práctico",
+    summary: [
+      "Desarrollo y uso de modelos de Machine Learning con BigQuery.",
+      "Análisis y procesamiento de grandes volúmenes de datos."
+    ],
+    bullets: [
+      "Entrenamiento de modelos en BigQuery ML",
+      "Consultas avanzadas sobre datasets",
+      "Análisis de resultados"
+    ],
+    related: "BigQuery ML · SQL · Google Cloud"
+  },
+
+  gcifbg: {
+    title: "Google Cloud Insights from BigQuery Data",
+    experience: "Proyecto académico / práctico",
+    summary: [
+      "Obtención de insights a partir de datos almacenados en BigQuery.",
+      "Visualización y análisis de información."
+    ],
+    bullets: [
+      "Análisis de grandes datasets",
+      "Consultas optimizadas",
+      "Interpretación de resultados"
+    ],
+    related: "BigQuery · SQL · Google Cloud"
+  },
+
+  php: {
+    title: "PHP",
+    experience: "+3 años de experiencia",
+    summary: [
+      "Lenguaje principal para desarrollo backend.",
+      "Creación de APIs, lógica de negocio y gestión de datos."
+    ],
+    bullets: [
+      "Desarrollo de APIs REST",
+      "Gestión de bases de datos",
+      "Autenticación y autorización",
+      "Arquitectura MVC"
+    ],
+    related: "MySQL · Oracle · PDO · JWT · Postman"
+  },
+
+  js: {
+    title: "JavaScript",
+    experience: "+3 años de experiencia",
+    summary: [
+      "Lenguaje principal para frontend y lógica del cliente.",
+      "Uso conjunto con PHP y de forma independiente."
+    ],
+    bullets: [
+      "Manipulación del DOM",
+      "Asincronía (fetch, promises)",
+      "Organización de código con clases",
+      "Animaciones y lógica de interfaz"
+    ],
+    related: "ES6 · Fetch API · Async/Await"
+  },
+
+  jquery: {
+    title: "jQuery",
+    experience: "+2 años de experiencia",
+    summary: [
+      "Framework utilizado para complementar JavaScript.",
+      "Uso frecuente en proyectos legacy."
+    ],
+    bullets: [
+      "Peticiones AJAX",
+      "Manipulación del DOM",
+      "Animaciones",
+      "Organización de código"
+    ],
+    related: "AJAX · DOM · Animations"
+  },
+
+  git: {
+    title: "Git",
+    experience: "+4 años de experiencia",
+    summary: [
+      "Herramienta principal de control de versiones.",
+      "Uso continuo desde la universidad."
+    ],
+    bullets: [
+      "Control de versiones",
+      "Trabajo colaborativo",
+      "Resolución de conflictos",
+      "Flujos de trabajo con ramas"
+    ],
+    related: "GitHub · GitLab"
+  },
+
+  mysql: {
+    title: "MySQL",
+    experience: "+3 años de experiencia",
+    summary: [
+      "Base de datos relacional principal.",
+      "Uso intensivo en proyectos backend."
+    ],
+    bullets: [
+      "Stored procedures",
+      "Triggers",
+      "Limpieza de datos",
+      "Consultas complejas con JOINs"
+    ],
+    related: "SQL · Indexes · Procedures"
+  },
+
+  oracle: {
+    title: "Oracle",
+    experience: "Experiencia intermedia",
+    summary: [
+      "Base de datos utilizada en entornos académicos y empresariales.",
+      "Trabajo con procedimientos complejos."
+    ],
+    bullets: [
+      "Packages y procedures",
+      "Consultas complejas",
+      "Optimización básica"
+    ],
+    related: "PL/SQL · Procedures"
+  },
+
+  tailwind: {
+    title: "Tailwind CSS",
+    experience: "+2 años de experiencia",
+    summary: [
+      "Framework de estilos principal.",
+      "Preferido para maquetación rápida y consistente."
+    ],
+    bullets: [
+      "Diseño responsive",
+      "Creación de componentes",
+      "Customización de estilos"
+    ],
+    related: "CSS · Responsive Design"
+  },
+
+  bootstrap: {
+    title: "Bootstrap",
+    experience: "+2 años de experiencia",
+    summary: [
+      "Framework utilizado en proyectos académicos.",
+      "Uso de componentes e iconografía."
+    ],
+    bullets: [
+      "Maquetación rápida",
+      "Uso de componentes",
+      "Bootstrap Icons"
+    ],
+    related: "CSS · Icons"
+  },
+
+  design: {
+    title: "Design",
+    experience: "Experiencia práctica",
+    summary: [
+      "Diseño y modelado para proyectos web.",
+      "Edición gráfica y creación de recursos visuales."
+    ],
+    bullets: [
+      "Wireframes y prototipos",
+      "Edición de imágenes",
+      "Creación de elementos gráficos"
+    ],
+    related: "Figma · Photoshop · Illustrator"
+  },
+
+  docker: {
+    title: "Docker",
+    experience: "Experiencia práctica",
+    summary: [
+      "Uso de Docker para simular entornos de desarrollo.",
+      "Creación de ecosistemas con Docker Compose."
+    ],
+    bullets: [
+      "Docker Compose",
+      "Creación de contenedores",
+      "Configuración de redes"
+    ],
+    related: "Docker · Docker Compose"
+  }
 };
