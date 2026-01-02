@@ -11,7 +11,7 @@ window.openWindow = async function (width, height, color, title, component) {
 
   const win = document.createElement("div");
   win.className =
-    "absolute bg-gray-200 border-2 border-stones-800 shadow-lg rounded-sm pointer-events-auto";
+  "absolute bg-gray-200 border-2 border-stone-800 shadow-lg rounded-sm pointer-events-auto flex flex-col";
   win.dataset.component = component;
 
   const isMobile = window.innerWidth < 768;
@@ -40,7 +40,7 @@ window.openWindow = async function (width, height, color, title, component) {
 
   // Contenido
   const content = document.createElement("div");
-  content.className = "p-4 text-gray-800 overflow-auto h-full";
+  content.className = "p-4 text-gray-800 overflow-auto flex-1 min-h-0";
   win.appendChild(content);
 
   try {

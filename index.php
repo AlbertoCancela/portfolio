@@ -41,6 +41,59 @@
     font-family: "VT323", monospace !important;
     font-weight: 700; /* fuerza bold */
 }
+:root {
+  --bg: #f3f4f6;
+  --bg-2: #e9eaec;
+  --bg-3: #d9dadc;
+  --text: #1f1f1f;
+  --muted: #4b5563;
+  --border: #1f1f1f;
+  --shadow: #1f1f1f;
+}
+
+html.dark {
+  --bg: #121212;
+  --bg-2: #1c1c1c;
+  --bg-3: #2a2a2a;
+  --text: #f3f4f6;
+  --muted: #a1a1aa;
+  --border: #f3f4f6;
+  --shadow: #f3f4f6;
+}
+
+/* Helpers retro */
+.retro-panel {
+  background: var(--bg);
+  color: var(--text);
+  border: 2px solid var(--border);
+  box-shadow: 3px 3px 0 0 var(--shadow);
+}
+
+.retro-item {
+  background: var(--bg-2);
+  color: var(--text);
+  border: 2px solid var(--border);
+  box-shadow: 2px 2px 0 0 var(--shadow);
+}
+
+.retro-item:hover {
+  background: var(--bg-3);
+}
+
+.retro-btn {
+  background: var(--bg-2);
+  color: var(--text);
+  border: 2px solid var(--border);
+  box-shadow: 2px 2px 0 0 var(--shadow);
+  padding: 6px 10px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.retro-btn:hover {
+  background: var(--bg-3);
+}
+
 </style>
 
 <body class="bg-teal-700">
@@ -61,6 +114,7 @@
     <script src="/src/js/windows.js"></script>
     <script src="/src/js/overWriteWords.js"></script>
     <script src="/src/js/techData.js"></script>
+    <script src="/src/js/projectsData.js"></script>
     <script src="/src/js/showView.js"></script>
     <script src="/src/js/currentDT.js"></script>
     <script src="/src/js/generateTechData.js" defer></script>

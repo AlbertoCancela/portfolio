@@ -53,7 +53,7 @@ window.renderTechSections = function () {
         ${group.items.map(item => `
           <div
             class="tech-item group text-center"
-            onclick="showView(this, 'description', 'techSection', '${item.id}')"
+            ondblclick="showView(this, 'description', 'techSection', '${item.id}')"
           >
             <img
               loading="lazy"

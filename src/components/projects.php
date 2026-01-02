@@ -2,22 +2,33 @@
     <div class="group w-[9.2em] h-[9.2em] flex flex-col items-center cursor-pointer">
         <img class="h-[85%] transition duration-100 ease-in-out group-hover:scale-90"
             src="/assets/images/icons/projects.png" alt="">
-        <p class="m-0 text-sm">Heyooo</p>
+        <p class="m-0 text-sm"> Training PMR </p>
     </div>
     <div class="w-[9.2em] h-[9.2em] flex flex-col justify-center items-center">
         <img class="h-[85%] fit-content hover:scale-90 ease-in-out transition duration-50 hover:cursor-pointer" 
             src="/assets/images/icons/projects.png" alt="">
-        <p> Heyooo </p>
+        <p> Clínica Viventi </p>
     </div>
     <div class="w-[9.2em] h-[9.2em] flex flex-col justify-center items-center">
         <img class="h-[85%] fit-content hover:scale-90 ease-in-out transition duration-50 hover:cursor-pointer" 
             src="/assets/images/icons/projects.png" alt="">
-        <p> Heyooo </p>
+        <p> POA's </p>
     </div>
     <div ondblclick="showView(this, 'projectDetail', 'projectsGroup', 'php')" class="w-[9.2em] h-[9.2em] flex flex-col justify-center items-center">
         <img class="h-[85%] fit-content hover:scale-90 ease-in-out transition duration-50 hover:cursor-pointer" 
             src="/assets/images/icons/projects.png" alt="">
-        <p> Heyooo </p>
+        <p> Sysmax-KWH </p>
+    </div>
+    <div ondblclick="showView(this, 'projectDetail', 'projectsGroup', 'php')" class="w-[9.2em] h-[9.2em] flex flex-col justify-center items-center">
+        <img class="h-[85%] fit-content hover:scale-90 ease-in-out transition duration-50 hover:cursor-pointer" 
+            src="/assets/images/icons/projects.png" alt="">
+        <p> SIADUH </p>
+    </div>
+
+    <div ondblclick="showView(this, 'projectDetail', 'projectsGroup', 'sga')" class="w-[9.2em] h-[9.2em] flex flex-col justify-center items-center">
+        <img class="h-[85%] fit-content hover:scale-90 ease-in-out transition duration-50 hover:cursor-pointer" 
+            src="/assets/images/icons/projects.png" alt="">
+        <p> This Portfolio </p>
     </div>
     <!-- <a target="_blank" href="https://clinicaviventi.com" class="group relative w-60 h-60 border overflow-hidden hover:cursor-pointer">
         <img class="w-full h-full group-hover:hidden" src="/assets/images/psicviventi.png" alt="">
@@ -63,6 +74,6 @@
         </div>
     </a> -->
 </section>
-<section id="projectDetail" class="hidden flex w-full h-auto border flex-wrap overflow-auto">
-    heyp
+<section id="projectDetail" class="hidden flex w-full h-[550px] md:h-auto flex-wrap overflow-auto">
+    
 </section>

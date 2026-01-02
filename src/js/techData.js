@@ -1,170 +1,170 @@
 const TECH_DATA = {
   linux: {
     title: "Linux",
-    experience: "+4 años de uso diario",
+    experience: "+4 years of daily use",
     summary: [
-      "Sistema operativo principal para desarrollo.",
-      "Entorno principal basado en Arch Linux."
+      "Main operating system for development.",
+      "Primary environment based on Arch Linux."
     ],
     bullets: [
-      "Gestión de servidores",
-      "Uso de cronjobs",
-      "Administración de recursos",
-      "Trabajo en entornos de desarrollo"
+      "Server management",
+      "Cron job usage",
+      "Resource administration",
+      "Working in development environments"
     ],
     related: "Arch Linux · Bash · Cron · Systemctl"
   },
 
   gcmlm: {
     title: "Machine Learning Models with BigQuery",
-    experience: "Proyecto académico / práctico",
+    experience: "Academic / practical project",
     summary: [
-      "Desarrollo y uso de modelos de Machine Learning con BigQuery.",
-      "Análisis y procesamiento de grandes volúmenes de datos."
+      "Development and use of Machine Learning models with BigQuery.",
+      "Analysis and processing of large data volumes."
     ],
     bullets: [
-      "Entrenamiento de modelos en BigQuery ML",
-      "Consultas avanzadas sobre datasets",
-      "Análisis de resultados"
+      "Model training with BigQuery ML",
+      "Advanced queries on datasets",
+      "Results analysis"
     ],
     related: "BigQuery ML · SQL · Google Cloud"
   },
 
   gcifbg: {
     title: "Google Cloud Insights from BigQuery Data",
-    experience: "Proyecto académico / práctico",
+    experience: "Academic / practical project",
     summary: [
-      "Obtención de insights a partir de datos almacenados en BigQuery.",
-      "Visualización y análisis de información."
+      "Extracting insights from data stored in BigQuery.",
+      "Data visualization and analysis."
     ],
     bullets: [
-      "Análisis de grandes datasets",
-      "Consultas optimizadas",
-      "Interpretación de resultados"
+      "Large dataset analysis",
+      "Optimized queries",
+      "Results interpretation"
     ],
     related: "BigQuery · SQL · Google Cloud"
   },
 
   php: {
     title: "PHP",
-    experience: "+3 años de experiencia",
+    experience: "+3 years of experience",
     summary: [
-      "Lenguaje principal para desarrollo backend.",
-      "Creación de APIs, lógica de negocio y gestión de datos."
+      "Primary language for backend development.",
+      "API creation, business logic, and data management."
     ],
     bullets: [
-      "Desarrollo de APIs REST",
-      "Gestión de bases de datos",
-      "Autenticación y autorización",
-      "Arquitectura MVC"
+      "REST API development",
+      "Database management",
+      "Authentication and authorization",
+      "MVC architecture"
     ],
     related: "MySQL · Oracle · PDO · JWT · Postman"
   },
 
   js: {
     title: "JavaScript",
-    experience: "+3 años de experiencia",
+    experience: "+3 years of experience",
     summary: [
-      "Lenguaje principal para frontend y lógica del cliente.",
-      "Uso conjunto con PHP y de forma independiente."
+      "Primary language for frontend and client-side logic.",
+      "Used together with PHP and independently."
     ],
     bullets: [
-      "Manipulación del DOM",
-      "Asincronía (fetch, promises)",
-      "Organización de código con clases",
-      "Animaciones y lógica de interfaz"
+      "DOM manipulation",
+      "Asynchronous programming (fetch, promises)",
+      "Code organization using classes",
+      "Animations and UI logic"
     ],
     related: "ES6 · Fetch API · Async/Await"
   },
 
   jquery: {
     title: "jQuery",
-    experience: "+2 años de experiencia",
+    experience: "+2 years of experience",
     summary: [
-      "Framework utilizado para complementar JavaScript.",
-      "Uso frecuente en proyectos legacy."
+      "Framework used to complement JavaScript.",
+      "Frequently used in legacy projects."
     ],
     bullets: [
-      "Peticiones AJAX",
-      "Manipulación del DOM",
-      "Animaciones",
-      "Organización de código"
+      "AJAX requests",
+      "DOM manipulation",
+      "Animations",
+      "Code organization"
     ],
     related: "AJAX · DOM · Animations"
   },
 
   git: {
     title: "Git",
-    experience: "+4 años de experiencia",
+    experience: "+4 years of experience",
     summary: [
-      "Herramienta principal de control de versiones.",
-      "Uso continuo desde la universidad."
+      "Primary version control tool.",
+      "Continuous use since university."
     ],
     bullets: [
-      "Control de versiones",
-      "Trabajo colaborativo",
-      "Resolución de conflictos",
-      "Flujos de trabajo con ramas"
+      "Version control",
+      "Collaborative work",
+      "Conflict resolution",
+      "Branch-based workflows"
     ],
     related: "GitHub · GitLab"
   },
 
   mysql: {
     title: "MySQL",
-    experience: "+3 años de experiencia",
+    experience: "+3 years of experience",
     summary: [
-      "Base de datos relacional principal.",
-      "Uso intensivo en proyectos backend."
+      "Primary relational database.",
+      "Extensive use in backend projects."
     ],
     bullets: [
       "Stored procedures",
       "Triggers",
-      "Limpieza de datos",
-      "Consultas complejas con JOINs"
+      "Data cleaning",
+      "Complex queries with JOINs"
     ],
     related: "SQL · Indexes · Procedures"
   },
 
   oracle: {
     title: "Oracle",
-    experience: "Experiencia intermedia",
+    experience: "Intermediate experience",
     summary: [
-      "Base de datos utilizada en entornos académicos y empresariales.",
-      "Trabajo con procedimientos complejos."
+      "Database used in academic and enterprise environments.",
+      "Work with complex procedures."
     ],
     bullets: [
-      "Packages y procedures",
-      "Consultas complejas",
-      "Optimización básica"
+      "Packages and procedures",
+      "Complex queries",
+      "Basic optimization"
     ],
     related: "PL/SQL · Procedures"
   },
 
   tailwind: {
     title: "Tailwind CSS",
-    experience: "+2 años de experiencia",
+    experience: "+2 years of experience",
     summary: [
-      "Framework de estilos principal.",
-      "Preferido para maquetación rápida y consistente."
+      "Primary styling framework.",
+      "Preferred for fast and consistent layout building."
     ],
     bullets: [
-      "Diseño responsive",
-      "Creación de componentes",
-      "Customización de estilos"
+      "Responsive design",
+      "Component creation",
+      "Style customization"
     ],
     related: "CSS · Responsive Design"
   },
 
   bootstrap: {
     title: "Bootstrap",
-    experience: "+2 años de experiencia",
+    experience: "+2 years of experience",
     summary: [
-      "Framework utilizado en proyectos académicos.",
-      "Uso de componentes e iconografía."
+      "Framework used in academic projects.",
+      "Use of components and iconography."
     ],
     bullets: [
-      "Maquetación rápida",
-      "Uso de componentes",
+      "Rapid layout development",
+      "Component usage",
       "Bootstrap Icons"
     ],
     related: "CSS · Icons"
@@ -172,30 +172,30 @@ const TECH_DATA = {
 
   design: {
     title: "Design",
-    experience: "Experiencia práctica",
+    experience: "Practical experience",
     summary: [
-      "Diseño y modelado para proyectos web.",
-      "Edición gráfica y creación de recursos visuales."
+      "Design and modeling for web projects.",
+      "Graphic editing and creation of visual assets."
     ],
     bullets: [
-      "Wireframes y prototipos",
-      "Edición de imágenes",
-      "Creación de elementos gráficos"
+      "Wireframes and prototypes",
+      "Image editing",
+      "Graphic asset creation"
     ],
     related: "Figma · Photoshop · Illustrator"
   },
 
   docker: {
     title: "Docker",
-    experience: "Experiencia práctica",
+    experience: "Practical experience",
     summary: [
-      "Uso de Docker para simular entornos de desarrollo.",
-      "Creación de ecosistemas con Docker Compose."
+      "Use of Docker to simulate development environments.",
+      "Creation of ecosystems with Docker Compose."
     ],
     bullets: [
       "Docker Compose",
-      "Creación de contenedores",
-      "Configuración de redes"
+      "Container creation",
+      "Network configuration"
     ],
     related: "Docker · Docker Compose"
   }
