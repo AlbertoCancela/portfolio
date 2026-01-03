@@ -97,7 +97,7 @@ html.dark {
 </style>
 
 <body class="bg-teal-700">
-    <!-- <div id="retro-loader" class="fixed inset-0 bg-teal-800 flex items-center justify-center z-[9999]">
+    <div id="retro-loader" class="fixed inset-0 bg-teal-800 flex items-center justify-center z-[9999]">
         <div class="loader-window bg-teal-900 border-4 border-teal-600 px-6 py-4 shadow-xl text-teal-100 font-mono">
             <p class="text-lg mb-4">
                 Loading...<span class="blink">▌</span>
@@ -106,12 +106,13 @@ html.dark {
                 <div class="progress-bar bg-teal-300 h-full animate-progress"></div>
             </div>
         </div>
-    </div> -->
+    </div>
 
     <main class="flex flex-col w-full min-h-screen">
         <?php include_once "src/components/mainscreen.php"?>
     </main>
     <script src="/src/js/windows.js"></script>
+    <script src="/src/js/loader.js"></script>
     <script src="/src/js/overWriteWords.js"></script>
     <script src="/src/js/techData.js"></script>
     <script src="/src/js/projectsData.js"></script>
