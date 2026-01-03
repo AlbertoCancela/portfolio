@@ -1,31 +1,31 @@
 <section id="projectsGroup" class="flex w-full h-[90%] flex-wrap overflow-auto">
-    <div class="group w-[9.2em] h-[9.2em] flex flex-col items-center cursor-pointer">
-        <img class="h-[85%] transition duration-100 ease-in-out group-hover:scale-90"
-            src="/assets/images/icons/projects.png" alt="">
-        <p class="m-0 text-sm"> Training PMR </p>
-    </div>
-    <div class="w-[9.2em] h-[9.2em] flex flex-col justify-center items-center">
-        <img class="h-[85%] fit-content hover:scale-90 ease-in-out transition duration-50 hover:cursor-pointer" 
-            src="/assets/images/icons/projects.png" alt="">
-        <p> Clínica Viventi </p>
-    </div>
-    <div class="w-[9.2em] h-[9.2em] flex flex-col justify-center items-center">
-        <img class="h-[85%] fit-content hover:scale-90 ease-in-out transition duration-50 hover:cursor-pointer" 
-            src="/assets/images/icons/projects.png" alt="">
-        <p> POA's </p>
-    </div>
-    <div ondblclick="showView(this, 'projectDetail', 'projectsGroup', 'php')" class="w-[9.2em] h-[9.2em] flex flex-col justify-center items-center">
+    <div ondblclick="showView(this, 'projectDetail', 'projectsGroup', 'sysmax')" class="w-[9.2em] h-[9.2em] flex flex-col justify-center items-center">
         <img class="h-[85%] fit-content hover:scale-90 ease-in-out transition duration-50 hover:cursor-pointer" 
             src="/assets/images/icons/projects.png" alt="">
         <p> Sysmax-KWH </p>
     </div>
-    <div ondblclick="showView(this, 'projectDetail', 'projectsGroup', 'php')" class="w-[9.2em] h-[9.2em] flex flex-col justify-center items-center">
+    <div ondblclick="showView(this, 'projectDetail', 'projectsGroup', 'pmr')" class="group w-[9.2em] h-[9.2em] flex flex-col items-center cursor-pointer">
+        <img class="h-[85%] transition duration-100 ease-in-out group-hover:scale-90"
+            src="/assets/images/icons/projects.png" alt="">
+        <p class="m-0 text-sm"> Training PMR </p>
+    </div>
+    <div ondblclick="showView(this, 'projectDetail', 'projectsGroup', 'viventi')" class="w-[9.2em] h-[9.2em] flex flex-col justify-center items-center">
+        <img class="h-[85%] fit-content hover:scale-90 ease-in-out transition duration-50 hover:cursor-pointer" 
+            src="/assets/images/icons/projects.png" alt="">
+        <p> Clínica Viventi </p>
+    </div>
+    <div ondblclick="showView(this, 'projectDetail', 'projectsGroup', 'poas')" class="w-[9.2em] h-[9.2em] flex flex-col justify-center items-center">
+        <img class="h-[85%] fit-content hover:scale-90 ease-in-out transition duration-50 hover:cursor-pointer" 
+            src="/assets/images/icons/projects.png" alt="">
+        <p> POA's </p>
+    </div>
+    <div ondblclick="showView(this, 'projectDetail', 'projectsGroup', 'siaduh')" class="w-[9.2em] h-[9.2em] flex flex-col justify-center items-center">
         <img class="h-[85%] fit-content hover:scale-90 ease-in-out transition duration-50 hover:cursor-pointer" 
             src="/assets/images/icons/projects.png" alt="">
         <p> SIADUH </p>
     </div>
 
-    <div ondblclick="showView(this, 'projectDetail', 'projectsGroup', 'sga')" class="w-[9.2em] h-[9.2em] flex flex-col justify-center items-center">
+    <div ondblclick="showView(this, 'projectDetail', 'projectsGroup', 'portfolio')" class="w-[9.2em] h-[9.2em] flex flex-col justify-center items-center">
         <img class="h-[85%] fit-content hover:scale-90 ease-in-out transition duration-50 hover:cursor-pointer" 
             src="/assets/images/icons/projects.png" alt="">
         <p> This Portfolio </p>

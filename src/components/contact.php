@@ -59,7 +59,7 @@
       <div class="flex sm:flex-row items-stretch sm:items-center gap-2 w-full sm:w-auto">
         <!-- SEND -->
         <a
-          href="mailto:albertocancelaa@gmail.com?subject=Hola%20Alberto&body=Hola%20Alberto,%20me%20gustar%C3%ADa%20contactarte%20por..."
+          href="mailto:albertocancelaa@gmail.com?subject=Contact%20Alberto&body=Hola%20Alberto,%20me%20gustar%C3%ADa%20contactarte%20para..."
           class="px-2 py-2 sm:py-1 text-[11px] border-2 border-[#1f1f1f] bg-[#f3f4f6] hover:bg-[#ffffff]
                  shadow-[2px_2px_0_0_#1f1f1f] flex items-center justify-center gap-1 w-full sm:w-auto"
           title="Send email">

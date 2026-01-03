@@ -121,83 +121,108 @@ target.innerHTML = `
 
   <!-- Scrollable body -->
   <div class="flex-1 min-h-0 overflow-y-auto pr-1">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-4">
 
-      <!-- LEFT: Images -->
-      <div class="lg:col-span-7 flex flex-col">
-        <div class="border-2 border-[#1f1f1f] bg-[#f3f4f6] overflow-hidden relative
-                    shadow-[3px_3px_0_0_#1f1f1f] h-[220px] sm:h-[280px] lg:h-[360px]">
-          ${
-            mainImg
-              ? `<img id="${uid}_main" src="${mainImg}" class="w-full h-full object-cover" alt="Project screenshot" />`
-              : `<div class="w-full h-full flex items-center justify-center text-sm text-[#4b5563]">
-                   No images available
-                 </div>`
-          }
+    <!-- Desktop layout: images row + info row -->
+    <div class="grid grid-cols-1 gap-4">
 
-          <span id="${uid}_label"
-            class="absolute bottom-2 left-2 text-[10px] px-2 py-1 border-2 border-[#1f1f1f] bg-[#e9eaec]">
-            ${mainLabel}
-          </span>
+      <!-- ✅ ROW 1: Gallery (Desktop: main + vertical thumbs) -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-4">
+
+        <!-- Main image -->
+        <div class="lg:col-span-9">
+          <div class="border-2 border-[#1f1f1f] bg-[#f3f4f6] overflow-hidden relative
+                      shadow-[3px_3px_0_0_#1f1f1f]
+                      h-[220px] sm:h-[280px] lg:h-[330px]">
+            ${
+              mainImg
+                ? `<img id="${uid}_main" src="${mainImg}" class="w-full h-full object-fill" alt="Project screenshot" />`
+                : `<div class="w-full h-full flex items-center justify-center text-sm text-[#4b5563]">
+                    No images available
+                  </div>`
+            }
+
+            <span id="${uid}_label"
+              class="absolute bottom-2 left-2 text-[10px] px-2 py-1 border-2 border-[#1f1f1f] bg-[#e9eaec]">
+              ${mainLabel}
+            </span>
+          </div>
         </div>
 
+        <!-- ✅ Thumbnails -->
         ${images.length > 1 ? `
-          <div class="mt-3 grid grid-cols-4 gap-2">
-            ${images.slice(0, 4).map((src, idx) => `
-              <button type="button"
-                data-pv="${uid}"
-                data-src="${src}"
-                class="h-14 border-2 border-[#1f1f1f] bg-[#f3f4f6] hover:bg-[#e9eaec]
-                       overflow-hidden shadow-[2px_2px_0_0_#1f1f1f] hover:cursor-pointer"
-                title="View image ${idx + 1}">
-                <img src="${src}" class="w-full h-full object-cover" alt="thumb ${idx + 1}" />
-              </button>
-            `).join("")}
+          <div class="lg:col-span-3">
+
+            <!-- ✅ Mobile thumbs: horizontal -->
+            <div class="grid grid-cols-4 gap-2 lg:hidden mt-3">
+              ${images.slice(0, 4).map((src, idx) => `
+                <button type="button"
+                  data-pv="${uid}"
+                  data-src="${src}"
+                  class="h-14 border-2 border-[#1f1f1f] bg-[#f3f4f6] hover:bg-[#e9eaec]
+                         overflow-hidden shadow-[2px_2px_0_0_#1f1f1f] hover:cursor-pointer"
+                  title="View image ${idx + 1}">
+                  <img src="${src}" class="w-full h-full object-fill" alt="thumb ${idx + 1}" />
+                </button>
+              `).join("")}
+            </div>
+
+            <!-- ✅ Desktop thumbs: vertical grid (same height as main image) -->
+            <div class="hidden lg:grid grid-rows-4 gap-2 h-[330px]">
+              ${images.slice(0, 4).map((src, idx) => `
+                <button type="button"
+                  data-pv="${uid}"
+                  data-src="${src}"
+                  class="border-2 border-[#1f1f1f] bg-[#f3f4f6] hover:bg-[#e9eaec]
+                         overflow-hidden shadow-[2px_2px_0_0_#1f1f1f] hover:cursor-pointer h-full"
+                  title="View image ${idx + 1}">
+                  <img src="${src}" class="w-full h-full object-cover" alt="thumb ${idx + 1}" />
+                </button>
+              `).join("")}
+            </div>
+
           </div>
         ` : ""}
+
       </div>
 
-      <!-- RIGHT: Description -->
-      <div class="lg:col-span-5">
-        <div class="border-2 border-[#1f1f1f] bg-[#f3f4f6] p-3
-                    shadow-[3px_3px_0_0_#1f1f1f]">
-          <p class="text-xs font-bold mb-2">Description</p>
+      <!-- ✅ ROW 2: Description full width -->
+      <div class="border-2 border-[#1f1f1f] bg-[#f3f4f6] p-4
+                  shadow-[3px_3px_0_0_#1f1f1f]">
+        <p class="text-xs font-bold mb-3">Description</p>
 
-          ${descArr.length ? descArr.map(p => `
-            <p class="text-sm text-[#2a2a2a] leading-relaxed mb-2 last:mb-0">
-              ${p}
-            </p>
-          `).join("") : `
-            <p class="text-sm text-[#2a2a2a] leading-relaxed">
-              (Add a description in PROJECT_DATA to show it here)
-            </p>
-          `}
-        </div>
+        ${descArr.length ? descArr.map(p => `
+          <p class="text-sm text-[#2a2a2a] leading-relaxed mb-2 last:mb-0">
+            ${p}
+          </p>
+        `).join("") : `
+          <p class="text-sm text-[#2a2a2a] leading-relaxed">
+            (Add a description in PROJECT_DATA to show it here)
+          </p>
+        `}
+      </div>
+
+      <!-- ✅ ROW 3: Tech stack full width -->
+      <div class="border-2 border-[#1f1f1f] bg-[#f3f4f6] p-3
+                  shadow-[3px_3px_0_0_#1f1f1f]">
+        <p class="text-xs font-bold mb-2">Tech Stack</p>
+
+        ${techs.length ? `
+          <div class="flex flex-wrap gap-2">
+            ${techs.map(t => `
+              <span class="text-[11px] px-2 py-1 border-2 border-[#1f1f1f] bg-[#e9eaec]
+                          shadow-[2px_2px_0_0_#1f1f1f]">
+                ${t}
+              </span>
+            `).join("")}
+          </div>
+        ` : `<p class="text-sm text-[#4b5563]">No tech stack available.</p>`}
       </div>
 
     </div>
   </div>
 
-  <!-- Tech stack (fixed bottom) -->
-  <div class="mt-4 shrink-0 border-2 border-[#1f1f1f] bg-[#f3f4f6] p-3
-              shadow-[3px_3px_0_0_#1f1f1f]">
-    <p class="text-xs font-bold mb-2">Tech Stack</p>
-
-    ${techs.length ? `
-      <div class="flex flex-wrap gap-2">
-        ${techs.map(t => `
-          <span class="text-[11px] px-2 py-1 border-2 border-[#1f1f1f] bg-[#e9eaec]
-                       shadow-[2px_2px_0_0_#1f1f1f]">
-            ${t}
-          </span>
-        `).join("")}
-      </div>
-    ` : `<p class="text-sm text-[#4b5563]">No tech stack available.</p>`}
-  </div>
-
 </section>
 `;
-
 
   // ✅ Hook: click en thumbs para cambiar imagen principal
   // (lo dejamos aquí para que no dependas de IDs globales)

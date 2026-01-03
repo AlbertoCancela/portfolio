@@ -3,7 +3,7 @@
   <!-- Header bar -->
   <div class="border-2 border-[#1f1f1f] bg-[#7c3aed] text-stone-100
               shadow-[3px_3px_0_0_#1f1f1f] px-3 py-2 mb-3">
-    <p class="text-sm font-bold tracking-wide">MUSIC_PLAYER.exe</p>
+    <p class="text-sm font-bold tracking-wide">MUSIC_PLAYER</p>
     <p class="text-[11px] opacity-90">Just recommendations</p>
   </div>
 

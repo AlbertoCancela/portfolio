@@ -1,10 +1,10 @@
 <section class="w-full h-full font-mono text-[#1f1f1f] flex flex-col min-h-0">
 
   <!-- Title bar -->
-  <div class="border-2 border-[#1f1f1f] bg-[#fdba74] shadow-[3px_3px_0_0_#1f1f1f] px-3 py-2 mb-3">
-    <p class="text-sm font-bold tracking-wide">SYSTEM_INFO.exe</p>
-    <p class="text-[11px] opacity-90">Portfolio settings & details</p>
-  </div>
+  <!-- <div class="border-2 border-[#1f1f1f] bg-[#fdba74] shadow-[3px_3px_0_0_#1f1f1f] px-3 py-2 mb-3">
+    <p class="text-sm font-bold tracking-wide">SYSTEM INFO</p>
+    <p class="text-[11px] opacity-90">Portfolio details</p>
+  </div> -->
 
   <!-- Main panel -->
   <div class="border-2 border-[#1f1f1f] bg-[#f3f4f6] shadow-[3px_3px_0_0_#1f1f1f]
@@ -64,13 +64,6 @@
       </div>
     </div>
 
-  </div>
-
-  <!-- Status bar -->
-  <div class="mt-3 border-2 border-[#1f1f1f] bg-[#e9eaec] shadow-[3px_3px_0_0_#1f1f1f] px-3 py-2">
-    <p class="text-[11px] opacity-80">
-      System ready · Permission: Granted
-    </p>
   </div>
 
 </section>
